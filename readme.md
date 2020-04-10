@@ -60,10 +60,10 @@ typedef struct {
 } Properties;
 ```
 注意一下几点：
- 1. property类型namespace，返回对应键值对结果。
- 2. json和yaml返回一个长度，keys 固定为content。
+ 1. property类型配置，返回多个对应键值对结果。
+ 2. json和yaml类型配置返回唯一键值对，keys 固定为content。
  
-###1.3.2应用感知配置更新
+### 1.3.2应用感知配置更新
 应用注册后，当配置中心发生变化后自动推送更新到回调函数。
 ```c
     apollo_env apolloEnv={
