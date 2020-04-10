@@ -23,11 +23,11 @@ window环境下使用cygwin编译,进入源代码根目录
 - uninstall 卸载安装。ls
 - clean 清空源代码生成的库文件缓存。
 ### 1.2.2 linux环境
-window环境下使用cygwin编译,进入源代码根目录
+linux环境直接使用gcc，进入源代码根目录
 ```shell
   make all
 ```
-安装到cygwin
+安装到系统中
 ```shell
   make install
 ```
