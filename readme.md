@@ -76,6 +76,7 @@ typedef struct {
         namespaceName:"application.yml",
         notificationId:-1
     };
+   //参数3表示异步线程是否继续运行，可定义指针 int* 当该值为0时，long pooling将停止。
    submitNotificationsAsync(apolloEnv,notifications,1,updateConfig);
 ```
 定义回调函数updateConfig
