@@ -1,0 +1,5 @@
+/cygwin/
+/libs/
+/cmake-build-debug/
+.idea
+*.iml
