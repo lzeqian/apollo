@@ -1,5 +1,5 @@
 //
-// Created by GVT on 2020/4/7.
+// Created by lzeqian<973465719@qq.com> on 2020/4/7.
 //
 #include "apolloclient.h"
 #include "pthread.h"
