@@ -13,11 +13,11 @@
 ### 1.2.1 cygwin环境
 window环境下使用cygwin编译,进入源代码根目录
 ```shell
-  make DESTDIR=./cygwin all
+  make -C ./cygwin all
 ```
 安装到cygwin
 ```shell
-  make DESTDIR=./cygwin install
+  make -C ./cygwin install
 ```
 其他指令
 - uninstall 卸载安装。ls
