@@ -3,10 +3,11 @@ INCLIDE=.
 CFLAGS= -Wall -std=c99
 TARGET   = libapollo.so
 LIBPATH  = ./libs/
-OBJS=global.o apolloclient.o apollo.o
+OBJS=$(LIBPATH)global.o $(LIBPATH)apolloclient.o $(LIBPATH)apollo.o
 SRCS=global.c apolloclient.c apollo.c
 
 all:$(OBJS)
+	if ls -al | grep -n '^.*\.o$$' > /dev/null ;then mv ./*.o $(LIBPATH); fi
 	$(CC) $(CFLAGS)  -shared -fPIC  -o $(TARGET) $(OBJS) -lcurl -ljson-c
 	mkdir -p $(LIBPATH)
 	mv $(TARGET) $(LIBPATH)
@@ -21,5 +22,4 @@ uninstall:
 	rm -rf /lib64/$(TARGET)
 	rm -rf /usr/include/apollo
 clean:
-	rm -rf *.o
 	rm -f $(LIBPATH)*
