@@ -20,7 +20,7 @@ window环境下使用cygwin编译,进入源代码根目录
   make -C ./cygwin install
 ```
 其他指令
-- uninstall 卸载安装。ls
+- uninstall 卸载安装。
 - clean 清空源代码生成的库文件缓存。
 ### 1.2.2 linux环境
 linux环境直接使用gcc，进入源代码根目录
